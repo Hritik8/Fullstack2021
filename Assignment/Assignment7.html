@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 7</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1200px;
+        margin: auto;
+        border: 5px solid rgb(231, 223, 223);
+        padding: 10px;
+      }
+      .header {
+        width: 100%;
+        height: 70px;
+        background-color: gray;
+        text-align: center;
+        color: white;
+        padding-top: 15px;
+        margin-bottom: 15px;
+      }
+      .banner {
+        height: 550px;
+        width: 100%;
+        background-color: skyblue;
+        text-align: center;
+        padding-top: 250px;
+        color: white;
+      }
+      .team {
+        height: 250px;
+        width: 100%;
+        /* background-color: rgb(199, 211, 195); */
+      }
+      #circle1 {
+          background-color: rgb(163, 111, 15);
+          border-radius: 50%;
+          width: 230px;
+        height: 230px;
+        margin-left: 80px;
+        margin-right: 20px;
+        float: left;
+        margin-top: 10px;
+      }
+      #circle2 {
+        background-color: rgb(163, 111, 15);
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 20px;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      #circle3 {
+        background-color: rgb(163, 111, 15);
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 20px;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      #circle4 {
+        background-color: rgb(163, 111, 15);
+        border-radius: 50%;
+        width: 230px;
+        margin-right: 20px;
+        height: 230px;
+        float: left;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .content {
+        height: 450px;
+        width: 100%;
+        background-color:white;
+      }
+      .left{
+          width: 50%;
+          height: 100%;
+          float: left;
+          text-align: center;
+          color: white;
+          padding-top: 210px;
+          background-color: gray;
+      }
+      .right{
+          width: 49%;
+          height: 100%;
+          float: right;
+      }
+      .article1{
+          width: 100%;
+          height: 31%;
+          background-color: rgb(230, 92, 0);
+          margin-bottom: 3%;
+          text-align: center;
+          padding-top: 55px;
+          color: white;
+      }
+      .article2{
+          width: 100%;
+          height: 31%;
+          background-color: rgb(230, 92, 0);
+          margin-bottom: 3%;
+          text-align: center;
+          padding-top: 55px;
+          color: white;
+      }
+      .article3{
+          width: 100%;
+          height: 30%;
+          background-color: rgb(230, 92, 0);
+          text-align: center;
+          padding-top: 55px;
+          color: white;
+      }
+      .technology {
+        height: 250px;
+        width: 100%;
+        /* background-color: rgb(199, 211, 195); */
+      }
+      #square1 {
+        background-color: rgb(255, 115, 0);
+        width: 230px;
+        height: 230px;
+        margin-left: 80px;
+        margin-right: 25px;
+        float: left;
+        margin-top: 10px;
+        border:2px solid black
+      }
+      #square2 {
+        background-color: rgb(255, 115, 0);
+        width: 230px;
+        height: 230px;
+        margin-right: 25px;
+        float: left;
+        margin-top: 10px;
+        border:2px solid black
+      }
+      #square3 {
+        background-color: rgb(255, 115, 0);
+        width: 230px;
+        height: 230px;
+        margin-right: 25px;
+        float: left;
+        margin-top: 10px;
+        border:2px solid black
+      }
+      #square4 {
+        background-color: rgb(255, 115, 0);
+        width: 230px;
+        height: 230px;
+        margin-right: 25px;
+        float: left;
+        margin-top: 10px;
+        border:2px solid black
+      }
+      .footer{
+          width: 100%;
+          height: 70px;
+          background-color: rgb(245, 155, 200);
+          color: white;
+          text-align: center;
+          padding-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h1>Header</h1></div>
+      <div class="banner"><h1>Banner</h1></div>
+      <h2 style="text-align: center;padding-top: 10px;">Section-1</h2>
+      <div class="team">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+      </div>
+      <h2 style="text-align: center;padding-top: 10px;">Section-2</h2>
+      <div class="content">
+        <div class="left"><h1>Main content</h1></div>
+        <div class="right">
+          <div class="article1"><h1>Article-1</h1></div>
+          <div class="article2"><h1>Article-2</h1></div>
+          <div class="article3"><h1>Article-3</h1></div>
+        </div>
+      </div>
+      <h2 style="text-align: center;padding-top: 10px;">Section-3</h2>
+      <div class="technology">
+        <div id="square1"></div>
+        <div id="square2"></div>
+        <div id="square3"></div>
+        <div id="square4"></div>
+      </div>
+      <h2 style="text-align: center;padding-top: 10px;">Section-4</h2>
+      <div class="footer"><h1>Footer</h1></div>
+    </div>
+  </body>
+</html>
