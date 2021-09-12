@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 8</title>
+    <title>Assignment 9</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
     <style>
       * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        scroll-behavior: smooth; 
+        scroll-behavior: smooth;
       }
       .container {
         width: 100%;
@@ -23,17 +27,18 @@
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
-        height: 3350px;
+        height: 500px;
         background-color: rgb(240, 247, 248);
       }
       #header {
         width: 100%;
         height: 70px;
         background-color: gray;
-        text-align: center;
+        text-align: right;
         color: white;
         padding-top: 15px;
         margin-bottom: 15px;
+        padding-right: 50px;
         position: sticky;
         top: 0;
       }
@@ -52,7 +57,7 @@
       .banner {
         height: 550px;
         width: 100%;
-        background-image: url("https://www.wallpapertip.com/wmimgs/68-682070_working-on-laptop-background.png");
+        background-image: url(../images/laptop-background.png);
         background-size: cover;
         background-position: center;
         color: white;
@@ -62,7 +67,7 @@
         height: 400px;
         width: 100%;
         margin-top: 100px;
-        
+
         /* background-color: rgb(199, 211, 195); */
       }
       #circle1 {
@@ -166,43 +171,6 @@
         margin-top: 300px;
         /* background-color: rgb(199, 211, 195); */
       }
-      /* #square1 {
-        background-color: rgb(255, 115, 0);
-        width: 230px;
-        height: 230px;
-        margin-left: 15%;
-        margin-right: 2%;
-        float: left;
-        margin-top: 10px;
-        border: 2px solid black;
-      }
-      #square2 {
-        background-color: rgb(255, 115, 0);
-        width: 230px;
-        height: 230px;
-        margin-right: 2%;
-        float: left;
-        margin-top: 10px;
-        border: 2px solid black;
-      }
-      #square3 {
-        background-color: rgb(255, 115, 0);
-        width: 230px;
-        height: 230px;
-        margin-right: 2%;
-        float: left;
-        margin-top: 10px;
-        border: 2px solid black;
-      }
-      #square4 {
-        background-color: rgb(255, 115, 0);
-        width: 230px;
-        height: 230px;
-        margin-right: 2%;
-        float: left;
-        margin-top: 10px;
-        border: 2px solid black;x
-      } */
       .main-container {
         width: 100%;
         display: flex;
@@ -248,53 +216,148 @@
         background-color: rgb(245, 155, 200);
         color: white;
         text-align: center;
-        
+
         margin-top: 500px;
       }
+      .show-btn,
+      .show-btnC,
+      .hide-btn {
+        font-size: 30px;
+        color: white;
+        line-height: 60px;
+        display: none;
+      }
+      .show-btn {
+        float: right;
+      }
+      #check {
+        position: absolute;
+        visibility: hidden;
+        z-index: -10;
+      }
+      @media (max-width: 800px) and (max-width: 1200px) {
+        .header {
+          width: 100%;
+        }
+        .show-btn,
+        .hide-btn {
+          display: block;
+        }
+        .banner {
+            
+            height: 200px;
+            width: 100%;
+        }
+        /* .nav{
+            display: none;
+        } */
+        .nav {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 100%;
+          height: 580px;
+          background-color: black;
+          text-align: center;
+          padding: 80px 0px;
+          transition: 0.7s;
+          line-height: normal;
+        }
+        #check:checked ~ .nav {
+          right: 0;
+        }
+        .nav {
+          display: block;
+        }
+        .nav a {
+          display: block;
+        }
+        .hide-btn {
+          position: absolute;
+          right: 20px;
+          top: 13px;
+          padding-right: 53px;
+        }
+        .content{
+        background-size: contain;
+    }
+    h1{
+        margin: 0 10px;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .left, .right{
+        margin: 15px auto;
+        width: 90%;
+        height: 100%;
+    }
+    .article{
+        margin: 10px 0;
+    }
+    .left h2, .right h2{
+        font-size: 1.5rem;
+    }
+    .footer a, .footer p{
+        font-size: 1.1rem;
+    }
+      }
+
     </style>
   </head>
   <body>
     <div class="container">
       <class class="header">
         <div id="header">
-          <a href="#">Home</a>
-          <a href="#content">About</a>
-          <a href="#team">Team</a>
-          <a href="#technology">Technologies</a>
-          <a href="#footer">Contact</a>
+          <input type="checkbox" id="check" />
+          <label for="check" class="show-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <div class="nav">
+            <a href="#">Home</a>
+            <a href="#content">About</a>
+            <a href="#team">Team</a>
+            <a href="#technology">Technologies</a>
+            <a href="#footer">Contact</a>
+            <label for="check" class="hide-btn">
+              <i class="fas fa-times"></i>
+            </label>
+          </div>
         </div>
       </class>
-      <div class="banner"><h1>Practical-8</h1></div>
-      
+      <div class="banner"><h1>Practical-9</h1></div>
+
       <div id="team">
         <h2
-        style="
-          text-align: center;
-          padding-top: 80px;
-          padding-bottom: 20px;
-          font-size: 50px;
-        "
-      >
-        Team Members
-      </h2>
+          style="
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 20px;
+            font-size: 50px;
+          "
+        >
+          Team Members
+        </h2>
         <div id="circle1"></div>
         <div id="circle2"></div>
         <div id="circle3"></div>
         <div id="circle4"></div>
       </div>
-      
+
       <div id="content">
         <h2
-        style="
-          text-align: center;
-          padding-top: 80px;
-          padding-bottom: 20px;
-          font-size: 50px;
-          margin-top: 20px;
-        "
-      >
-        About Us
-      </h2>
+          style="
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 20px;
+            font-size: 50px;
+            margin-top: 20px;
+          "
+        >
+          About Us
+        </h2>
         <div class="left">
           <h1>About Projects</h1>
           <br />
@@ -336,18 +399,18 @@
           <div class="project3"><h1>Project-3</h1></div>
         </div>
       </div>
-      
+
       <div id="technology">
         <h2
-        style="
-          text-align: center;
-          padding-top: 80px;
-          padding-bottom: 20px;
-          font-size: 50px;
-        "
-      >
-        Technology Used
-      </h2>
+          style="
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 20px;
+            font-size: 50px;
+          "
+        >
+          Technology Used
+        </h2>
         <div class="main-container">
           <div class="boxes">
             <div class="image">
@@ -424,18 +487,18 @@
           </div>
         </div>
       </div>
-      
+
       <div id="footer">
         <h2
-        style="
-          text-align: center;
-          padding-top: 40px; 
-          padding-bottom: 20px;
-          font-size: 50px;
-        "
-      >
-        Contact
-      </h2>
+          style="
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 20px;
+            font-size: 50px;
+          "
+        >
+          Contact
+        </h2>
         <p>
           Website template for Practical - 8 &#169;
           <a
