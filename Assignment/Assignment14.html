@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 14</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(9, 33, 39); 
+            text-align: center;   
+        }
+        h1{
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        #container{
+            display: flex;
+            text-align: center;
+            align-items: center; 
+            margin-left: 43%;
+        }
+        button{
+            padding: 20px;
+            background-color: rgb(192, 224, 228);
+        }
+        button:hover{
+            background-color: khaki;
+        }
+        #button1{
+            margin-right: 55px;
+        }
+        #button2{
+            margin-left: 55px;
+        }
+        #container h2{
+            color: white;
+            background-color: rgb(9, 33, 39);
+        }
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <div id="container">
+        <button id="button1" onclick="decrement()"><i class="fa fa-minus"></i>
+        </button> 
+        <h2 id="value">0</h2>
+        <button id="button2" onclick="increment()"><i class="fa fa-plus"></i>
+        </button>
+    </div>
+
+    <script>
+        var decrease = document.getElementById("button1");
+        var increase = document.getElementById("button2");
+        var display = document.getElementById("value");
+        var currentValue = parseInt(display.innerText);
+        go();
+        
+        function increment(){
+            currentValue++;
+            display.innerText = currentValue;
+            go();
+        }
+
+        function decrement() {
+            currentValue--;
+            display.innerText = currentValue;
+            go();
+        }
+
+        function go(){
+            if(currentValue==0){
+                button1.disabled = true;
+            }
+            else{
+                button1.disabled = false;
+            } 
+        }
+
+    </script>
+</body>
+</html>
